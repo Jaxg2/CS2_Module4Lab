@@ -13,6 +13,10 @@ protected:
 	int passTDS;
 	int recTDS;
 	int rushTDS;
+	double totalYrds;
+	double totalPass;
+	double totalRush;
+	double totalRec;
 public:
 	Player();
 	Player(string& name);
