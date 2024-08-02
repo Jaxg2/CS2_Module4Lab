@@ -134,6 +134,7 @@
     <ClInclude Include="Stats.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Quarterback.cpp" />
     <ClCompile Include="Receiver.cpp" />

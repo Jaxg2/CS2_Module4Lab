@@ -12,7 +12,6 @@ Quarterback::Quarterback(string &name) : Player(name)
 void Quarterback::displayStats() const
 {
 	cout << "Quarterback: " << name << endl << "Passing Yards: " << passYards << endl <<
-	"Passing Touchdowns: " << passTDS << "Rushing Yards: " << rushYards << "Rushing Touchdowns: " << endl 
-	<< "Total Yards: " << totalYrds << endl
+	"Touchdowns: " << td << "Total Yards: " << totalYrds << endl
 	<< "Average Yards: " << averageYards;
 }

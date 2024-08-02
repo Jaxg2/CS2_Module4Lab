@@ -10,9 +10,7 @@ protected:
 	int passYards;
 	int recYards;
 	int rushYards;
-	int passTDS;
-	int recTDS;
-	int rushTDS;
+	int td;
 	double totalYrds;
 	double totalPass;
 	double totalRush;
@@ -26,15 +24,11 @@ public:
 	void setpassYards(int pYards);
 	void setrecYards(int reYards);
 	void setrushYards(int ruYards);
-	void setpassTDS(int pTDS);
-	void setrecTDS(int reTDS);
-	void setrushTDS(int ruTDS);
+	void setTD();
 	int getpassYards();
 	int getrecYards();
 	int getrushYards();
-	int getpassTDS();
-	int getrecTDS();
-	int getrushTDS();
+	int getTD();
 };
 
 #endif

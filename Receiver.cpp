@@ -11,7 +11,7 @@ void Receiver::displayStats() const
 {
 	cout << "Receiver: " << name << endl <<
 		"Receiving Yards: " << recYards << endl
-		<< "Receiving Touchdowns: " << recTDS << endl
+		<< "Touchdowns: " << td << endl
 		<< "Total Yards: " << totalRec << endl
 		<< "Average Yards: " << averageYards << endl;
 }

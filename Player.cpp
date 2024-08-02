@@ -6,9 +6,7 @@ Player::Player()
 	passYards = 0;
 	recYards = 0;
 	rushYards = 0;
-	passTDS = 0;
-	recTDS = 0;
-	rushTDS = 0;
+	td = 0;
 }
 
 Player::Player(string& name)
@@ -51,22 +49,9 @@ void Player::setrushYards(int ruYards)
 	rushYards = ruYards;
 }
 
-//Sets pass tds
-void Player::setpassTDS(int pTDS)
+void Player::setTD()
 {
-	passTDS = pTDS;
-}
-
-//Sets rec tds
-void Player::setrecTDS(int reTDS)
-{
-	recTDS = reTDS;
-}
-
-//Sets rush tds
-void Player::setrushTDS(int ruTDS)
-{
-	rushTDS = ruTDS;
+	td = 0;
 }
 
 //Gets pass yards
@@ -87,20 +72,7 @@ int Player::getrushYards()
 	return rushYards;
 }
 
-//Gets pass tds
-int Player::getpassTDS()
+int Player::getTD()
 {
-	return passTDS;
-}
-
-//Gets rec tds
-int Player::getrecTDS()
-{
-	return recTDS;
-}
-
-//Gets rush tds
-int Player::getrushTDS()
-{
-	return rushTDS;
+	return td;
 }
