@@ -1,12 +1,12 @@
 #include "Receiver.h"
 #include <iostream>
 using namespace std;
-
+//default constructor
 Receiver::Receiver()
 {
 
 }
-
+//displays stats
 void Receiver::displayStats() const
 {
 	cout << "Receiver: " << name << endl <<

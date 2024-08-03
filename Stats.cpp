@@ -5,18 +5,20 @@
 #include "Receiver.h"
 #include <iostream>
 
+//Constructor
 Stats::Stats() : numPlayers(0)
 {
 
 }
 
 
-void Stats::addPlayer(Player* player)
+void Stats::addPlayer(Player* players)
 {
 
 }
 
-void Stats::inputStats(Player* player)
+//Gets player name, position, and stats
+void Stats::inputStats()
 {
 
 	int numPlayers;
@@ -43,9 +45,9 @@ void Stats::inputStats(Player* player)
 			cout << "Enter total touchdowns: ";
 			cin >> td;
 
-			player = new Quarterback(name);
-			player->setpassYards(pYards);
-			player->setTD(td);
+			players = new Quarterback(name);
+			players->setpassYards(pYards);
+			players->setTD(td);
 		}
 		else if (position == "WR")
 		{
@@ -54,9 +56,9 @@ void Stats::inputStats(Player* player)
 			cin >> reYards;
 			cout << "Enter total touchdowns: ";
 			cin >> td;
-			player = new Receiver(name);
-			player->setrushYards(reYards);
-			player->setTD(td);
+			players = new Receiver(name);
+			players->setrecYards(reYards);
+			players->setTD(td);
 		}
 		else if (position == "RB")
 		{
@@ -66,9 +68,9 @@ void Stats::inputStats(Player* player)
 			cout << "Enter total touchdowns: ";
 			cin >> td;
 			
-			player = new RunningBack(name);
-			player.setrecYards(ruYards);
-			player.setTD(td);
+			players = new RunningBack(name);
+			players.setrushYards(ruYards);
+			players.setTD(td);
 		}
 	}
 }
@@ -88,7 +90,7 @@ void Stats::sortAvg()
 
 }
 
-
+//Destructor
 Stats::~Stats()
 {
 	for (int i = 0; i < numPlayers; i++)

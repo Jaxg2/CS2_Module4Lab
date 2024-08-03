@@ -13,8 +13,8 @@ private:
 public:
 	Stats();
 	~Stats();
-	void addPlayer(Player* player);
-	void inputStats(Player* player);
+	void addPlayer(Player* players);
+	void inputStats();
 	void displayAllStats() const;
 	void sortTotal();
 	void sortAvg();

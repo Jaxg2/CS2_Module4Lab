@@ -2,11 +2,12 @@
 #include <iostream>
 using namespace std;
 
+//default constructor
 RunningBack::RunningBack()
 {
 
 }
-
+//displays stats
 void RunningBack::displayStats() const
 {
 	cout << "Running Back: " << name << endl
