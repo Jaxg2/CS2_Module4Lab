@@ -8,12 +8,14 @@ using namespace std;
 class Stats
 {
 private:
-	vector <Player> players;
-
+	Player* players;
+	int numPlayers;
 public:
-	void addPlayer();
-	void inputStats();
-	void displayAllStats();
+	Stats();
+	~Stats();
+	void addPlayer(Player* player);
+	void inputStats(Player* player);
+	void displayAllStats() const;
 	void sortTotal();
 	void sortAvg();
 };
